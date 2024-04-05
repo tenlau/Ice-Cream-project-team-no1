@@ -1,0 +1,85 @@
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.products label {
+    text-transform: uppercase;
+    font-family: Titan One;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34.35px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #FFA5BA;
+    margin-bottom: 32px;
+    margin-top: 61px;
+}
+
+.products h1 {
+    text-transform: uppercase;
+    font-family: Titan One;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 66.41px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #D41443;
+    margin: 0;
+}
+
+.product h2 {
+    font-family: Titan One;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34.35px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.product h2::after {
+    content: "...";
+    color: #ffffff;
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.product p {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28.16px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0;
+
+}
+
+.product {
+    background: #FFB8CA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 16px;
+    gap: 32px;
+}
+
+.expand-btn {
+    
+}
