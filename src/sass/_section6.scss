@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 .cards {
@@ -17,13 +16,11 @@
 .contacts-card {
     background: #FFFFFF;
     width: 368px;
-    
     gap: 0px;
     border-radius: 24px 24px 24px 24px;
     opacity: 0px;
     box-shadow: 0px 8px 30px 0px #D414431A;
     padding: 40px;
-    
 }
 
 .cafe-card {
@@ -79,7 +76,7 @@
 }
 
 .days-card {
-    font-family: var(--common-font);
+font-family: var(--common-font);
 font-size: var(--primary-font-size);
 font-weight: var(--weight-fnt-medium);
 line-height: 29.76px;
