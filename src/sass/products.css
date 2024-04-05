@@ -58,7 +58,8 @@
     letter-spacing: 0.04em;
     text-align: center;
     color: #ffffff;
-    margin-top: 0;
+    margin: 0;
+    padding: 0 16px;
 
 }
 
@@ -68,18 +69,50 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 24px;
-    padding-left: 16px;
-    padding-right: 16px;
+    width: 368px;
+    position: relative;
+    margin-top: 281px;
+    padding-top: 165px;
 }
 
 .products-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0px 16px;
+    margin-bottom: 60px;
     gap: 32px;
 }
 
 .expand-btn {
-    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+    color: #D41443;
+    text-align: center;
+    margin-left: 45%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.card-1 h2::before {
+    content: url(../images/products/ice-cream.png);
+    position: absolute;
+    margin-top: -460px;
+    margin-left: -94px;
+}
+
+.card-2 h2::before {
+    content: url(../images/products/ice-coffee.png);
+    position: absolute;
+    margin-top: -460px;
+    margin-left: -92px;
+}
+
+.card-3 h2::before {
+    content: url(../images/products/milkshakes.png);
+    position: absolute;
+    margin-top: -460px;
+    margin-left: -78px;
 }
