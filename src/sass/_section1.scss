@@ -1,6 +1,8 @@
-.container{
+.first-container{
     max-width: 1200px;
     margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
 }
 .header.container{
     display: flex;
@@ -55,4 +57,53 @@
     height: 8px;
     margin-left: 12px; 
     fill: var(--red-passion);
+}
+.first-section-titles{
+    font-family: var(--big-font);
+    width: 277px;
+    height: 137px;
+}
+.first-title{
+    font-size: var(--hero-span-font-size);
+    color: var(--red-passion);
+    display: block;
+}
+.third-title{
+    font-size: var(--h1);
+    color: var(--white);
+}
+.left-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20%;
+    font-family: var(--common-font);
+    font-size: var(--secondary-font-size);
+}
+.first-button{
+    background-color: var(--red-passion);
+    color: var(--white);
+}
+.second-button{
+    background-color: var(--white);
+    color: var(--red-passion);
+}
+.milk-photo{
+    margin: 40px 0px 60px 16px;
+    width: 213px;
+    height: 216px;
+}
+.milk-text{
+    background-color: transparent;
+    font-family: var(--common-font);
+    color: var(--white);
+    font-size: var(--secondary-font-size);
+    width: 200px;
+    height: 78px;
+}
+.arrow-photo{
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+    margin-left: 0px;
 }
