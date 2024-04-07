@@ -45,8 +45,15 @@
    la HOW IT'S MADE? */
     --black-pink: #907E82;
     /* culoare fundal la mesajul de la testimoniale*/
-    --cloudy: #E1E1E1;
-
+    --cloudy: #FAFAFA;
     /* Griul de la testimoniale */
     --grey: #D9D9D9;
+    /* Bordura recenziilor */
+    --reviews-border: #E1E1E1;
+}
+
+* {
+    font-family: var(--common-font);
+    font-size: var(--primary-font-size);
+    font-weight: var(--weight-fnt-medium);
 }
