@@ -1,4 +1,16 @@
 
+document.getElementById('openModal').addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'block';
+  });
+  
+  document.querySelector('.close').addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'none';
+  });
+  $('input').on('change', function() {
+      $('body').toggleClass('blue');
+    }); 
+
+
 // Functionalitatea pentru Sectiunea 2- Products //
 
 function showDescription(button) {
@@ -21,3 +33,4 @@ function showDescription(button) {
 
     parinteDiv.appendChild(backButton);
 }
+
