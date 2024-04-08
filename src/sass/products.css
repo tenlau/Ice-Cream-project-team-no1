@@ -7,7 +7,7 @@
 
 .products label {
     text-transform: uppercase;
-    font-family: Titan One;
+    font-family: var(--big-font);
     font-size: 30px;
     font-weight: 400;
     line-height: 34.35px;
@@ -20,7 +20,7 @@
 
 .products h1 {
     text-transform: uppercase;
-    font-family: Titan One;
+    font-family: var(--big-font);
     font-size: 58px;
     font-weight: 400;
     line-height: 66.41px;
@@ -31,33 +31,33 @@
 }
 
 .product h2 {
-    font-family: Titan One;
+    font-family: var(--big-font);
     font-size: 30px;
     font-weight: 400;
     line-height: 34.35px;
     letter-spacing: 0.04em;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--white);
     margin-bottom: 0;
 }
 
 .product h2::after {
     content: "...";
-    color: #ffffff;
+    color: var(--white);
     display: block;
     margin-top: 16px;
     margin-bottom: 32px;
 }
 
 .product p {
-    font-family: DM Sans;
+    font-family: var(--common-font);
     font-size: 16px;
     font-weight: 700;
     line-height: 28.16px;
     letter-spacing: 0.04em;
     text-align: center;
-    color: #ffffff;
+    color: var(--white);
     margin: 0;
     padding: 0 16px;
 
