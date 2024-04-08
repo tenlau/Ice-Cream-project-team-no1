@@ -64,7 +64,6 @@
 }
 
 .product {
-    background: #FFB8CA;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,6 +72,16 @@
     position: relative;
     margin-top: 281px;
     padding-top: 165px;
+}
+
+.card-1 {
+    background: #FFB8CA;
+}
+.card-2 {
+    background: #F0D1A5;
+}
+.card-3 {
+    background: #C2E297;
 }
 
 .products-container {
@@ -96,6 +105,10 @@
     margin-top: 60px;
 }
 
+.expand-btn:hover {
+    background-color: rgb(218, 209, 209);
+}
+
 .card-1 h2::before {
     content: url(../images/products/ice-cream.png);
     position: absolute;
@@ -115,4 +128,22 @@
     position: absolute;
     margin-top: -460px;
     margin-left: -78px;
+}
+
+.expand-btn svg {
+    width: 20px;
+    fill: #D41443;
+    margin-top: -55px;
+}
+
+.back-btn {
+    color: #D41443;
+    background-color: #ffffff;
+    width: 80px;
+    border: none;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
 }
