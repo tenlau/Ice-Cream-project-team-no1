@@ -96,8 +96,54 @@
         </ul>
         <!--butoane-->
         <div class="contact-buttons">
-            <button class="contact-btn-lct">Our Locations &nbsp;></button>
-            <button class="contact-btn-frcs">Franchise &nbsp;></button>
+            <button type="button" onclick="document.getElementById('mdl1').style.display='block'" class="contact-btn-lct">Our Locations &nbsp;></button>
+            <button type="button" onclick="document.getElementById('mdl2').style.display='block'" class="contact-btn-frcs">Franchise &nbsp;></button>
+        </div>
+        <div class="modals-section">
+            <div id="mdl1" class="modal-sct6 modal1-sct6">
+                <div class="sct6-modal-content">
+                    <div onclick="document.getElementById('mdl1').style.display='none'" class="sct6-close-btn">&times;</div>
+                    <div class="sct6-container">
+                      <p id="title-modal">You can find us here...</p>
+                      <div class="images-map">
+                        <img src="./images/map-modal1-sct6.jpg" alt="You can find us here..." id="harta">
+                      </div>
+                      <p id="text-adress">5820, Marion Center, Los Angeles, USA</p>
+                      <button type="button" class="sct6-modal-btn">Open in Google Map</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div id="mdl2" class="modal-sct6 modal2-sct6">
+                <div class="sct6-modal-content">
+                    <span onclick="document.getElementById('mdl2').style.display='none'" class="sct6-close-btn">&times;</span>
+                    <div class="sct6-container">
+                        <p id="title-modal">Leave your details and we&apos;ll call you back</p>
+                        <div class="modal-form-container">
+                            <form>
+                                <label for="name">
+                                    <p class="sct6-modal-lbl-txt">Name</p>
+                                    <input type="text" id="name" name="name" autofocus class="sct6-modal-input" required />
+                                 </label>
+                                 <label for="telephone">
+                                    <p class="sct6-modal-lbl-txt">Telephone</p>
+                                    <input type="text" id="telephone" name="telephone" autofocus class="sct6-modal-input" required />
+                                 </label>
+                                 <label for="e-mail">
+                                    <p class="sct6-modal-lbl-txt">E-mail</p>
+                                    <input type="text" id="e-mail" name="e-mail" autofocus class="sct6-modal-input" required />
+                                 </label>
+                                 <label for="comment">
+                                    <p class="sct6-modal-lbl-txt">A few words...</p>
+                                    <textarea name="comment" id="comment" rows="5" placeholder="Write here..." class="sct6-modal-input sct6-modal-input-text"></textarea>
+                                </label>
+                            </form>
+                        </div>
+                        <button type="button" class="sct6-modal-btn">Send</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
     </section>    
   </body>
