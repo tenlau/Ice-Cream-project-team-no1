@@ -1,0 +1,223 @@
+
+.header{
+    background-color: rgba(255, 184, 202, 1); 
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.nav-bar {
+    display: flex;
+    list-style: none; 
+    padding: 0; 
+    gap: 35px;
+    width: 541px;
+    height: 21px;
+    margin-top: 50px;
+}
+.nav-bar a{
+    
+    color: var(--white);
+}
+
+.nav-bar li {
+    font-family: var(--big-font);
+    font-size: var(--primary-font-size);
+    font-weight: var(--weight-fnt-big);
+    z-index: 1;
+}
+.nav-bar li:hover,
+.nav-bar li:focus{
+    color: var(--red-passion);
+}
+.logo-svg{
+    width: 199px;
+    height: 50px;
+    margin-top: 37px;
+}
+.buy-button{
+    width: 159px;
+    height: 44px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--white);
+    border-radius: 22px;
+    color: var(--red-passion);
+    margin-top: 40px;
+    font-weight: var(--weight-fnt-big);
+    background-color: var(--white);
+    z-index: 1;
+}
+.button-svg{
+    width: 4px;
+    height: 8px;
+    stroke: var(--red-passion);
+    margin-left: 12px;
+}
+.cup-of-milk{
+    width:213px;
+    height:216px;
+    z-index: 1;
+}
+.arrow-right{
+    width: 26px;
+    height: 26px;
+}
+.first-section-titles{
+    width: 277px;
+    height: 137px;
+    margin-top: 60px;
+}
+.third-title{
+    font-family: var(--big-font);
+    font-size: var(--h1);
+    font-weight: var(--weight-fnt-common);
+    color: var(--white);
+}
+.first-title{
+    color: var(--red-passion);
+    font-family: var(--big-font);
+    font-size: var(--hero-span-font-size);
+    font-weight: var(--weight-fnt-common);
+}
+.first-button{
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--red-passion);
+    border-radius: 20px;
+    width: 107px;
+    height:40px;
+    border: none;
+    margin-right: 12px;
+}
+.second-button{
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--red-passion);
+    border-radius: 20px;
+    width: 138px;
+    height: 40px;
+    border: none;
+}
+.first-button:hover,
+.second-button:hover,
+.first-button:focus,
+.second-button:focus{
+    background-color: var(--red-passion);
+    border-color: var(--red-passion);
+    color: var(--white);
+}
+.milk-text{
+    font-family: var(--common-font);
+    color: var(--white);
+    width: 200px;
+    height: 78px;
+    margin-top: 10px;
+}
+.text-arrow{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.milk-photo{
+    width: 213px;
+    height: 216px;
+    margin-top: 140px;
+}
+.milk-can{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 16px;
+}
+.elipse-hero{
+    height: 543px;
+    width: 543px;
+    background-color: rgba(255, 165, 186, 1);
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    right: 149px;
+    z-index: 0;
+}
+.hero{
+    background-color: rgba(255, 184, 202, 1);
+    max-width: 100%;
+}
+.hero-right{
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding: 37px 16px 0 16px;
+}
+.icecream-cone{
+    position: absolute;
+    width: 237px;
+    height: 557px;
+    top: 35;
+    right: 328;
+    margin-right: 8px;
+}
+.tasty-chiquita{
+    position: absolute;
+    width: 304px;
+    height: 241px;
+    right: 16px;
+    top: 515px;
+    right: 16;
+}
+.cafes-elipse{
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    top: 68px;
+    right: 16px;
+    z-index: 1;
+}
+.food-elipse{
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    top: 160px;
+    right: 16px;
+    z-index: 1;
+}
+.food,
+.cafes{
+    color: var(--white);
+}
+.number{
+    color: var(--red-passion);
+    font-family: var(--big-font);
+    font-size: var(--hero-section-numbers-font-size);
+    width: 54px;
+    height: 53px;
+    letter-spacing: 0.04em;
+}
+.duo{
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    position: absolute;
+    z-index: 2;
+}
+.cafes-group .duo{
+    top: 72;
+    right: 34;
+}
+.food-group .duo{
+    top: 163;
+    right: 34;
+}
