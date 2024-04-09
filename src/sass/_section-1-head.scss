@@ -82,11 +82,11 @@ a{
     font-weight: var(--weight-fnt-common);
     color: var(--white);
 }
-.first-title{
+.first-title {
+    font-size: 58px;
+    font-family: var(--big-font); 
+    font-weight: var(--weight-fnt-big); 
     color: var(--red-passion);
-    font-family: var(--big-font);
-    font-size: var(--hero-span-font-size);
-    font-weight: var(--weight-fnt-common);
 }
 .first-button{
     background-color: var(--white);
@@ -97,6 +97,7 @@ a{
     height:40px;
     border: none;
     margin-right: 12px;
+    margin-top: 24px;
 }
 .second-button{
     background-color: var(--white);
@@ -106,6 +107,7 @@ a{
     width: 138px;
     height: 40px;
     border: none;
+    margin-top: 24px;
 }
 .first-button:hover,
 .second-button:hover,
@@ -130,7 +132,7 @@ a{
 .milk-photo{
     width: 213px;
     height: 216px;
-    margin-top: 140px;
+    margin-top: 40px;
 }
 .milk-can{
     display: flex;
@@ -171,7 +173,7 @@ a{
     width: 304px;
     height: 241px;
     right: 16px;
-    top: 515px;
+    top: 439px;
     right: 16;
 }
 .cafes-elipse{
