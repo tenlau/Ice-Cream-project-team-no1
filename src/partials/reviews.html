@@ -1,21 +1,16 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews</title>
-</head>
+
 <body>
     <!-- 'Slider for reviews' -->
-    <div class="slider">
-        <div class="slide" id="testimonial1">
+    <div class="carousel">
+        <div class="review active">
             <img src="./images/reviews/testimonials1.png" 
             alt="Emily"
             width="85"
             height="85">
 
-            <div class="review">
-            <div class="review-text">
+            <div class="rvw">
+            <div class="rvw-text">
             <p>I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition you have beautiful serving, cozy atmosphere and polite staff.</p>
             <!-- <img src="./images/reviews/underline.png"
             alt="underline" width="821">
@@ -27,15 +22,15 @@
             <p>Emily, Los Angeles</p>
             </div>
 
-        <div class="slide" id="testimonial2">
+        <div class="review">
 
             <img src="./images/reviews/testimonials2.png" 
             alt="Rachel" 
             width="85" 
             height="85">
 
-            <div class="review">
-            <div class="review-text">
+            <div class="rvw">
+            <div class="rvw-text">
             <p>As an ice cream enthusiast, I'm always on the lookout for new flavors, and this company never fails to impress. Their unique seasonal offerings are always a treat to try.</p>
             </div>
             </div>
@@ -43,15 +38,15 @@
                 <p>Rachel, New York</p>
         </div>
 
-        <div class="slide" id="testimonial3">
+        <div class="review">
 
             <img src="./images/reviews/testimonials3.png" 
             alt="Tammy" 
             width="85" 
             height="85">
 
-            <div class="review">
-            <div class="review-text">
+            <div class="rvw">
+            <div class="rvw-text">
             <p>Hands down, the best ice cream I've ever had! It never disappoints. Their commitment to using high-quality ingredients really shines through in every scoop. I'm a loyal customer for life!</p>
             </div>
             </div>
@@ -59,23 +54,12 @@
             <p>Tammy, Philadelphia</p>
         </div>
 
-        <div class="slider-home">
-            <a href="#testiomanial1">
-                <svg>
-                    <use href="./images/icons/symbol-defs.svg#icon-home"></use>
-                </svg>
-            </a>
-            <a href="testimonial2">
-                <svg>
-                    <use href="./images/icons/symbol-defs.svg#icon-grey-ellipse"></use>
-                </svg>
-            </a>
-            <a href="testiomanial3">
-                <svg>
-                    <use href="./images/icons/symbol-defs.svg#icon-grey-ellipse"></use>
-                </svg>           
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
-
+<script src="./sass/reviews.js"></script>
 </body>
 </html>
