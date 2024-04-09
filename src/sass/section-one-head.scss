@@ -2,10 +2,10 @@
     background-color: rgba(255, 184, 202, 1);;
 }
 .first-container{
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
-
 .header-container{
     display: flex;
     justify-content: space-evenly;
@@ -14,7 +14,6 @@
     margin-top: 36px;
     padding: 0 16;
 }
-
 .logo-home {
     width: 199px;
     height: 50px;
@@ -28,18 +27,16 @@
     gap: 35px;
     z-index: 1;
 }
-
 .nav-bar li{
     font-family: var(--common-font);
-    font-weight: var(--weight-fnt-big); 
+    font-weight: var(--weight-fnt-big);
     font-size: var(--primary-font-size);
     line-height: 1.2;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 .nav-bar li:hover{
     color: var(--red-passion);
 }
-
 a{
     text-decoration: none;
     color:#ffffff;
@@ -54,7 +51,7 @@ ul{
 .purchase-button{
     background-color: var(--white);
     color: var(--red-passion);
-    border-radius: 22px; 
+    border-radius: 22px;
     border-color: var(--white);
     width: 159px;
     height: 44px;
@@ -67,7 +64,6 @@ ul{
     position: absolute;
     margin-right: 20px;
 }
-
 .purchase-button svg {
     width: 4px;
     height: 8px;
@@ -76,13 +72,9 @@ ul{
     margin-left: 12px;
 }
 .hero-down{
-    max-width: 1280px;
-    height: 664px;
-    position: relative;
     margin: 0 auto;
     padding: 37px 16px 0 16px;
 }
-
 .first-section-titles{
     font-family: var(--big-font);
     width: auto;
@@ -90,18 +82,15 @@ ul{
     line-height: 1.1;
     margin-top: 0;
 }
-
 .first-title{
     font-size: var(--hero-span-font-size);
     color: var(--red-passion);
     display: block;
 }
-
 .third-title{
     font-size: var(--h1);
     color: var(--white);
 }
-
 .first-button,
 .second-button {
     border-radius: 22px;
@@ -120,7 +109,6 @@ ul{
     width: 107px;
     height: 40px;
 }
-
 .second-button{
     background-color: var(--white);
     color: var(--red-passion);
@@ -145,7 +133,6 @@ ul{
     height: 78px;
     margin-top: 16px;
 }
-
 .arrow-photo{
     width: 26px;
     height: 26px;
@@ -179,7 +166,6 @@ ul{
     height: 557px;
     margin-right: 8px;
 }
-
 .hero-caffe-trucks{
     position: relative;
     background-color: rgba(255, 184, 202, 1);
@@ -199,7 +185,7 @@ ul{
 }
 .both{
    display: flex;
-   flex-direction: column; 
+   flex-direction: column;
    position: absolute;
    z-index: 2;
    gap: 2;
@@ -248,4 +234,8 @@ ul{
     height: 241px;
     top: 423px;
     right: 16px;
+}
+body {
+    margin: 0 auto;
+    padding: 0;
 }
