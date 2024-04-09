@@ -87,7 +87,7 @@
     position: relative;
     margin-left: 10px;
     cursor: pointer;
-    transition: background 0.6s ease;
+    // transition: background 0.6s ease;
 }
 
 .dot:visited,
@@ -95,6 +95,10 @@
 .dot:active {
     background: url('../images/reviews/home.png');
 }
+
+// span.dot.dot:active:active {
+//     background: url('../images/reviews/home.png');
+// }
 
 /* Don't need button navigation */
 @supports (scroll-snap-type) {
