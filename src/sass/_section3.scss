@@ -1,55 +1,55 @@
-:root {
-  --common-font: 'DM Sans', sans-serif;
-  --big-font: 'Titan One', sans-serif;
-  --primary-font-size: 16px;
-  --secondary-font-size: 14px;
-  --h1: 38px;
-  --h2: 30px;
-  --hero-span-font-size: 58px;
-  --hero-section-numbers-font-size: 46px;
-  --reviews-names-font-size: 20px;
-  --weight-fnt-common: 400;
-  --weight-fnt-medium: 500;
-  --weight-fnt-big: 700;
-  --white: #ffffff;
-  --black: #000000;
-  /* brackground roz in Frame 3 rectangle 2*/
-  --pink-bg: #ffb8ca;
-  /* roz in Frame 3 Elipse 3*/
-  --pink-elipse: #ffa5ba;
-  /* Culoarea meniului cand avem hover și
-    pentru fonturile big */
-  --red-passion: #d41443;
-  /* culoare fundal buton Our Location */
-  --red-button: #d41342;
+// :root {
+//   --common-font: 'DM Sans', sans-serif;
+//   --big-font: 'Titan One', sans-serif;
+//   --primary-font-size: 16px;
+//   --secondary-font-size: 14px;
+//   --h1: 38px;
+//   --h2: 30px;
+//   --hero-span-font-size: 58px;
+//   --hero-section-numbers-font-size: 46px;
+//   --reviews-names-font-size: 20px;
+//   --weight-fnt-common: 400;
+//   --weight-fnt-medium: 500;
+//   --weight-fnt-big: 700;
+//   --white: #ffffff;
+//   --black: #000000;
+//   /* brackground roz in Frame 3 rectangle 2*/
+//   --pink-bg: #ffb8ca;
+//   /* roz in Frame 3 Elipse 3*/
+//   --pink-elipse: #ffa5ba;
+//   /* Culoarea meniului cand avem hover și
+//     pentru fonturile big */
+//   --red-passion: #d41443;
+//   /* culoare fundal buton Our Location */
+//   --red-button: #d41342;
 
-  /* culoare pentru cele trei puncte de la testimoniale*/
-  --pink-red: #c7133e;
-  /*culoare pentru svg-ul home de la testimoniale */
-  --pink-purple: #d31342;
-  /* culoare fundal pentru svg-urile din ultima secțiune*/
-  --pink-svg: #fea5bb;
-  /* fundalul la modalul icecream-open-burger*/
-  --pink-modal: #e17992;
-  /* culoarea bordurilor de la meniurile din modale */
-  --pink-borders: #e18298;
+//   /* culoare pentru cele trei puncte de la testimoniale*/
+//   --pink-red: #c7133e;
+//   /*culoare pentru svg-ul home de la testimoniale */
+//   --pink-purple: #d31342;
+//   /* culoare fundal pentru svg-urile din ultima secțiune*/
+//   --pink-svg: #fea5bb;
+//   /* fundalul la modalul icecream-open-burger*/
+//   --pink-modal: #e17992;
+//   /* culoarea bordurilor de la meniurile din modale */
+//   --pink-borders: #e18298;
 
-  /* Fundalul pentru ICE-COFFE */
-  --brown-ice-coffe: #f0d1a5;
-  /* Fundalul pentru MILKSHAKE */
-  --green-milkshake: #c2e297;
-  /* Fundalul pentru HOW IT'S MADE? */
-  --pink-made: #fff5f6;
-  /* culoare pentru paragraful explicativ de
-   la HOW IT'S MADE? */
-  --black-pink: #907e82;
-  /* culoare fundal la mesajul de la testimoniale*/
-  --cloudy: #fafafa;
-  /* Griul de la testimoniale */
-  --grey: #d9d9d9;
-  /* Bordura recenziilor */
-  --reviews-border: #e1e1e1;
-}
+//   /* Fundalul pentru ICE-COFFE */
+//   --brown-ice-coffe: #f0d1a5;
+//   /* Fundalul pentru MILKSHAKE */
+//   --green-milkshake: #c2e297;
+//   /* Fundalul pentru HOW IT'S MADE? */
+//   --pink-made: #fff5f6;
+//   /* culoare pentru paragraful explicativ de
+//    la HOW IT'S MADE? */
+//   --black-pink: #907e82;
+//   /* culoare fundal la mesajul de la testimoniale*/
+//   --cloudy: #fafafa;
+//   /* Griul de la testimoniale */
+//   --grey: #d9d9d9;
+//   /* Bordura recenziilor */
+//   --reviews-border: #e1e1e1;
+// }
 
 * {
   font-family: var(--common-font);
@@ -116,7 +116,7 @@
 }
 
 .container-how-its-made {
-  width: 1200px;
+  width: 100%;
   height: 1229px;
 }
 
