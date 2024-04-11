@@ -1,12 +1,14 @@
 @import './common';
 @import './example';
-@import './products';
+
 @import './variables';
+@import './modern-normalize';
+
+@import './section-1-head';
+// @import './modal-favicon';
+@import './products';
+@import './section3';
 @import './gallery';
 @import './reviews';
 @import './section6';
-@import './section-1-head';
-@import './section3';
-@import './footer.scss';
-@import './modern-normalize';
-
+@import './footer';
