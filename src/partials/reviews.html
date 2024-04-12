@@ -3,7 +3,7 @@
 <body>
     <!-- 'Slider for reviews' -->
     <div class="carousel">
-        <div class="review active">
+        <div class="review active" id="review">
             <img src="./images/reviews/testimonials1.png" 
             alt="Emily"
             width="85"
@@ -55,11 +55,49 @@
         </div>
 
         <div class="dots">
-            <span class="dot active" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
+          
     </div>
-<script src="./reviews.js"></script>
+
+    <script>
+        const slides = document.querySelectorAll('.review');
+        const dots = document.querySelectorAll('.dot');
+
+        function activateSlide(index) {
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+            });
+            dots.forEach((dot) => {
+                dot.classList.remove('active');
+            });
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                activateSlide(index);
+            });
+        });
+
+        function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                activateSlide(currentSlide);
+            }
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    activateSlide(index);
+                    currentSlide = index;
+                });
+            });
+
+            setInterval(nextSlide, 3000); // Change slide every 3 seconds (3000 milliseconds)
+
+    </script>
+
 </body>
 </html>
