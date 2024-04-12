@@ -1,15 +1,17 @@
 
-.header{
-    background-color: rgba(255, 184, 202, 1); 
-}
+// .header{
+//     background-color: rgba(255, 184, 202, 1); 
+// }
 .container{
-    max-width: 1200px;
+    width: 100%;
+    
     margin: 0 auto;
 }
-a{
-    text-decoration: none;
-}
-.header-container {
+// a {
+//     text-decoration: none;
+// }
+
+.logo-container {
     display: flex;
     justify-content: space-between;  
 }
@@ -21,7 +23,6 @@ a{
     gap: 35px;
     width: 541px;
     height: 21px;
-    margin-top: 50px;
 }
 .nav-bar a{
     
@@ -34,15 +35,17 @@ a{
     font-weight: var(--weight-fnt-big);
     z-index: 1;
 }
+
 .nav-bar li:hover,
 .nav-bar li:focus{
     color: var(--red-passion);
 }
+
 .logo-svg{
     width: 199px;
     height: 50px;
-    margin-top: 37px;
 }
+
 .buy-button{
     width: 159px;
     height: 44px;
@@ -51,37 +54,42 @@ a{
     border-color: var(--white);
     border-radius: 22px;
     color: var(--red-passion);
-    margin-top: 40px;
     font-weight: var(--weight-fnt-big);
     background-color: var(--white);
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .button-svg{
     width: 4px;
     height: 8px;
     stroke: var(--red-passion);
     margin-left: 12px;
 }
+
 .cup-of-milk{
     width:213px;
     height:216px;
-    z-index: 1;
 }
+
 .arrow-right{
     width: 26px;
     height: 26px;
 }
+
 .first-section-titles{
     width: 277px;
     height: 137px;
-    margin-top: 60px;
 }
+
 .third-title{
     font-family: var(--big-font);
     font-size: var(--h1);
     font-weight: var(--weight-fnt-common);
     color: var(--white);
 }
+
 .first-title {
     font-size: 58px;
     font-family: var(--big-font); 
@@ -99,6 +107,7 @@ a{
     margin-right: 12px;
     margin-top: 24px;
 }
+
 .second-button{
     background-color: var(--white);
     border-color: var(--white);
@@ -109,6 +118,7 @@ a{
     border: none;
     margin-top: 24px;
 }
+
 .first-button:hover,
 .second-button:hover,
 .first-button:focus,
@@ -117,6 +127,7 @@ a{
     border-color: var(--red-passion);
     color: var(--white);
 }
+
 .milk-text{
     font-family: var(--common-font);
     color: var(--white);
@@ -124,58 +135,66 @@ a{
     height: 78px;
     margin-top: 10px;
 }
-.text-arrow{
+
+.text-arrow {
     display:flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    padding-top: 90px;
 }
+
 .milk-photo{
     width: 213px;
     height: 216px;
     margin-top: 40px;
 }
+
 .milk-can{
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-    margin-left: 16px;
+    align-items: center;
 }
+
 .elipse-hero{
     height: 543px;
     width: 543px;
     background-color: rgba(255, 165, 186, 1);
     border-radius: 50%;
     position: absolute;
-    top: -30px;
-    right: 149px;
+    top: -70px;
+    right: 295px;
     z-index: 0;
 }
-.hero{
+.hero-section{
     background-color: rgba(255, 184, 202, 1);
-    max-width: 100%;
+    width: 100%;
+    height: 664px;
+    padding: 37px 16px 0px 16px;
 }
+
 .hero-right{
-    max-width: 1200px;
+    width: 100%;
     position: relative;
     margin: 0 auto;
-    padding: 37px 16px 0 16px;
 }
+
 .icecream-cone{
     position: absolute;
     width: 237px;
     height: 557px;
-    top: 35;
-    right: 328;
-    margin-right: 8px;
+    top: -15px;
+    right: 465px;
 }
+
 .tasty-chiquita{
     position: absolute;
     width: 304px;
     height: 241px;
     right: 16px;
-    top: 439px;
-    right: 16;
+    top: 300px;
+    right: 0px;
 }
+
 .cafes-elipse{
     width: 30px;
     height: 30px;
@@ -184,8 +203,8 @@ a{
     position: absolute;
     top: 68px;
     right: 16px;
-    z-index: 1;
 }
+
 .food-elipse{
     width: 30px;
     height: 30px;
@@ -194,12 +213,13 @@ a{
     position: absolute;
     top: 160px;
     right: 16px;
-    z-index: 1;
 }
+
 .food,
 .cafes{
     color: var(--white);
 }
+
 .number{
     color: var(--red-passion);
     font-family: var(--big-font);
