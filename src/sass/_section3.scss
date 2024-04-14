@@ -1,62 +1,3 @@
-// :root {
-//   --common-font: 'DM Sans', sans-serif;
-//   --big-font: 'Titan One', sans-serif;
-//   --primary-font-size: 16px;
-//   --secondary-font-size: 14px;
-//   --h1: 38px;
-//   --h2: 30px;
-//   --hero-span-font-size: 58px;
-//   --hero-section-numbers-font-size: 46px;
-//   --reviews-names-font-size: 20px;
-//   --weight-fnt-common: 400;
-//   --weight-fnt-medium: 500;
-//   --weight-fnt-big: 700;
-//   --white: #ffffff;
-//   --black: #000000;
-//   /* brackground roz in Frame 3 rectangle 2*/
-//   --pink-bg: #ffb8ca;
-//   /* roz in Frame 3 Elipse 3*/
-//   --pink-elipse: #ffa5ba;
-//   /* Culoarea meniului cand avem hover și
-//     pentru fonturile big */
-//   --red-passion: #d41443;
-//   /* culoare fundal buton Our Location */
-//   --red-button: #d41342;
-
-//   /* culoare pentru cele trei puncte de la testimoniale*/
-//   --pink-red: #c7133e;
-//   /*culoare pentru svg-ul home de la testimoniale */
-//   --pink-purple: #d31342;
-//   /* culoare fundal pentru svg-urile din ultima secțiune*/
-//   --pink-svg: #fea5bb;
-//   /* fundalul la modalul icecream-open-burger*/
-//   --pink-modal: #e17992;
-//   /* culoarea bordurilor de la meniurile din modale */
-//   --pink-borders: #e18298;
-
-//   /* Fundalul pentru ICE-COFFE */
-//   --brown-ice-coffe: #f0d1a5;
-//   /* Fundalul pentru MILKSHAKE */
-//   --green-milkshake: #c2e297;
-//   /* Fundalul pentru HOW IT'S MADE? */
-//   --pink-made: #fff5f6;
-//   /* culoare pentru paragraful explicativ de
-//    la HOW IT'S MADE? */
-//   --black-pink: #907e82;
-//   /* culoare fundal la mesajul de la testimoniale*/
-//   --cloudy: #fafafa;
-//   /* Griul de la testimoniale */
-//   --grey: #d9d9d9;
-//   /* Bordura recenziilor */
-//   --reviews-border: #e1e1e1;
-// }
-
-* {
-  font-family: var(--common-font);
-  font-size: var(--primary-font-size);
-  font-weight: var(--weight-fnt-medium);
-}
-
 .subtitle {
   font-family: var(--big-font);
   font-size: 30px;
@@ -83,6 +24,7 @@
 .subtitlu-how-its-made {
   text-align: center;
   margin-bottom: 16px;
+  padding-top: 60px;
 }
 
 .how-its-made {
@@ -95,7 +37,7 @@
   align-items: center;
   background-image: url(../images/how-it-is-made/milkyway-bg.png.png);
   background-size: cover;
-
+  width: auto;
   position: relative;
 }
 
@@ -107,12 +49,7 @@
 
 .container-right {
   flex-grow: 1;
-  margin-bottom: 70px;
-  margin-left: 99px;
-}
-
-.container-right p {
-  margin-bottom: 10px;
+  padding-left: 80px;
 }
 
 .container-how-its-made {
@@ -126,11 +63,10 @@
   font-size: var(--primary-font-size);
   color: var(--black);
   line-height: 28.16px;
-  white-space: pre-line;
-  margin-bottom: 32px;
   letter-spacing: 0.04em;
   font-weight: bold;
   grid-template-rows: repeat(4, 1fr);
+  white-space: pre-line;
 }
 
 .p-how-its-made-2 {
@@ -138,10 +74,10 @@
   font-weight: var(--weight-fnt-medium);
   font-size: var(--secondary-font-size);
   line-height: 27.16px;
-  white-space: pre-line;
   margin-bottom: 40px;
   letter-spacing: 0.04em;
   grid-template-rows: repeat(4, 1fr);
+  white-space: pre-line;
 }
 
 .btn-read-more {
@@ -225,28 +161,59 @@
   height: 1229px;
 }
 
+.advantages-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 20px; /* Gap between grid items */
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.icon-production {
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/how-it-is-made/production.png');
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.icon-icecream-apple {
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/how-it-is-made/icecream-apple.png');
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.icon-flavours {
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/how-it-is-made/flavours.png');
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.container-p1-how-its-made {
+  width: 400px;
+  height: 104px;
+}
+
 /* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
 }
 
 /* Modal Content */
