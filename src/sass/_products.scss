@@ -8,23 +8,23 @@
 .products label {
     text-transform: uppercase;
     font-family: var(--big-font);
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 34.35px;
+    line-height: 20.61px;
     letter-spacing: 0.04em;
     text-align: center;
     color: #FFA5BA;
-    margin-bottom: 32px;
+    margin-bottom: 15px;
     margin-top: 61px;
 }
 
 .products h1 {
     text-transform: uppercase;
     font-family: var(--big-font);
-    font-size: 58px;
+    font-size: 34px;
     font-weight: 400;
-    line-height: 66.41px;
-    letter-spacing: 0.06em;
+    line-height: 38.96px;
+    letter-spacing: 0.04em;
     text-align: center;
     color: #D41443;
     margin: 0;
@@ -32,9 +32,9 @@
 
 .product h2 {
     font-family: var(--big-font);
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 34.35px;
+    line-height: 22.9px;
     letter-spacing: 0.04em;
     text-align: center;
     text-transform: uppercase;
@@ -52,9 +52,9 @@
 
 .product p {
     font-family: var(--common-font);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 28.16px;
+    line-height: 21.28px;
     letter-spacing: 0.04em;
     text-align: center;
     color: var(--white);
@@ -68,10 +68,10 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 24px;
-    width: 368px;
+    width: 280px;
     position: relative;
-    margin-top: 281px;
-    padding-top: 165px;
+    margin-top: 140px;
+    padding-top: 140px;
 }
 
 .card-1 {
@@ -86,10 +86,9 @@
 
 .products-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 60px;
-    gap: 32px;
+    margin: 0 auto 60px auto;
 }
 
 .expand-btn {
@@ -100,7 +99,7 @@
     background-color: #ffffff;
     color: #D41443;
     text-align: center;
-    margin-left: 45%;
+    margin-left: 44%;
     margin-bottom: 60px;
     margin-top: 60px;
 }
@@ -110,24 +109,24 @@
 }
 
 .card-1 h2::before {
-    content: url(../images/products/ice-cream.png);
+    content: url(../images/products/mobile-ice-cream.png);
     position: absolute;
-    margin-top: -460px;
-    margin-left: -94px;
+    margin-top: -297px;
+    margin-left: -80px;
 }
 
 .card-2 h2::before {
-    content: url(../images/products/ice-coffee.png);
+    content: url(../images/products/mobile-ice-coffee.png);
     position: absolute;
-    margin-top: -460px;
-    margin-left: -92px;
+    margin-top: -297px;
+    margin-left: -77px;
 }
 
 .card-3 h2::before {
-    content: url(../images/products/milkshakes.png);
+    content: url(../images/products/mobile-milkshakes.png);
     position: absolute;
-    margin-top: -460px;
-    margin-left: -78px;
+    margin-top: -297px;
+    margin-left: -69px;
 }
 
 .expand-btn svg {
@@ -142,8 +141,142 @@
     width: 80px;
     border: none;
     text-align: center;
-    margin-left: 40%;
+    margin-left: 35%;
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .products label {
+        font-size: 26px;
+        line-height: 29.77px;
+    }
+    .products h1 {
+        font-size: 48px;
+        line-height: 54.96px;
+        margin-bottom: 20px;
+    }
+    .product {
+        width: 224px;
+        padding-top: 105px;
+    }
+    .products-container {
+        flex-direction: row;
+        gap: 16px;
+    }
+    .product p {
+        line-height: 24.64px;
+    }
+    .card-1 h2::before {
+        content: url(../images/products/tablet-ice-cream.png);
+        margin-left: -54px;
+        margin-top: -257px;
+    }
+    .card-2 h2::before {
+        content: url(../images/products/tablet-ice-coffee.png);
+        margin-left: -49.5px;
+        margin-top: -257px;
+    }
+    .card-3 h2::before {
+        content: url(../images/products/tablet-milkshakes.png);
+        margin-left: -42px;
+        margin-top: -257px;
+    }
+    .expand-btn {
+        margin-left: 42%;
+        margin-bottom: 40px;
+        margin-top: 32px;
+    }
+    .back-btn {
+        margin-left: 31%;
+    }
+    
+}
+
+@media screen and (min-width:1280px) {
+    .products label {
+        font-size: 30px;
+        line-height: 34.35px;
+    }
+    .products h1 {
+        font-size: 58px;
+        line-height: 66.41px;
+        margin-bottom: 20px;
+        letter-spacing: 0.06em;
+    }
+    .product {
+        width: 368px;
+        padding-top: 165px;
+        margin-top: 250px;
+    }
+    .products-container {
+        gap: 32px;
+    }
+    .card-1 h2::before {
+        content: url(../images/products/ice-cream.png);
+        margin-left: -94px;
+        margin-top: -452px;
+    }
+    .card-2 h2::before {
+        content: url(../images/products/ice-coffee.png);
+        margin-left: -89px;
+        margin-top: -452px;
+    }
+    .card-3 h2::before {
+        content: url(../images/products/milkshakes.png);
+        margin-left: -77px;
+        margin-top: -452px;
+    }
+    .expand-btn {
+        margin-bottom: 60px;
+        margin-top: 52px;
+        margin-left: 44%;
+    }
+    .back-btn {
+        margin-left: 39%;
+    }
+    .product h2 {
+        font-size: 30px;
+        line-height: 34.35px;
+    }
+    .product p {
+        font-size: 16px;
+        line-height: 28.16px;
+    }
+}
+
+ @media screen and (-webkit-min-device-pixel-ratio:2) and 
+ (min-resolution:2dppx) {
+    .card-1 h2::before {
+        content: url(../images/products/mobile-ice-cream@2x.png);
+    }
+    .card-1 h2::before {
+        content: url(../images/products/mobile-ice-coffee@2x.png);
+    }
+    .card-1 h2::before {
+        content: url(../images/products/mobile-milkshakes@2x.png);
+    }
+    @media screen and (min-width:768px) {
+        .card-1 h2::before {
+            content: url(../images/products/tablet-ice-cream@2x.png);
+        }
+        .card-2 h2::before {
+            content: url(../images/products/tablet-ice-coffee@2x.png);
+        }
+        .card-3 h2::before {
+            content: url(../images/products/tablet-milkshakes@2x.png);
+        }
+    }
+    @media screen and (min-width:1280px) {
+        .card-1 h2::before {
+            content: url(../images/products/ice-cream@2x.png);
+        }
+        .card-2 h2::before {
+            content: url(../images/products/ice-coffee@2x.png);
+        }
+        .card-3 h2::before {
+            content: url(../images/products/milkshakes@2x.png);
+        }
+    }
 }
