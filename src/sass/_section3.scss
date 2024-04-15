@@ -1,68 +1,12 @@
-// :root {
-//   --common-font: 'DM Sans', sans-serif;
-//   --big-font: 'Titan One', sans-serif;
-//   --primary-font-size: 16px;
-//   --secondary-font-size: 14px;
-//   --h1: 38px;
-//   --h2: 30px;
-//   --hero-span-font-size: 58px;
-//   --hero-section-numbers-font-size: 46px;
-//   --reviews-names-font-size: 20px;
-//   --weight-fnt-common: 400;
-//   --weight-fnt-medium: 500;
-//   --weight-fnt-big: 700;
-//   --white: #ffffff;
-//   --black: #000000;
-//   /* brackground roz in Frame 3 rectangle 2*/
-//   --pink-bg: #ffb8ca;
-//   /* roz in Frame 3 Elipse 3*/
-//   --pink-elipse: #ffa5ba;
-//   /* Culoarea meniului cand avem hover și
-//     pentru fonturile big */
-//   --red-passion: #d41443;
-//   /* culoare fundal buton Our Location */
-//   --red-button: #d41342;
-
-//   /* culoare pentru cele trei puncte de la testimoniale*/
-//   --pink-red: #c7133e;
-//   /*culoare pentru svg-ul home de la testimoniale */
-//   --pink-purple: #d31342;
-//   /* culoare fundal pentru svg-urile din ultima secțiune*/
-//   --pink-svg: #fea5bb;
-//   /* fundalul la modalul icecream-open-burger*/
-//   --pink-modal: #e17992;
-//   /* culoarea bordurilor de la meniurile din modale */
-//   --pink-borders: #e18298;
-
-//   /* Fundalul pentru ICE-COFFE */
-//   --brown-ice-coffe: #f0d1a5;
-//   /* Fundalul pentru MILKSHAKE */
-//   --green-milkshake: #c2e297;
-//   /* Fundalul pentru HOW IT'S MADE? */
-//   --pink-made: #fff5f6;
-//   /* culoare pentru paragraful explicativ de
-//    la HOW IT'S MADE? */
-//   --black-pink: #907e82;
-//   /* culoare fundal la mesajul de la testimoniale*/
-//   --cloudy: #fafafa;
-//   /* Griul de la testimoniale */
-//   --grey: #d9d9d9;
-//   /* Bordura recenziilor */
-//   --reviews-border: #e1e1e1;
-// }
-
-* {
-  font-family: var(--common-font);
-  font-size: var(--primary-font-size);
-  font-weight: var(--weight-fnt-medium);
+.body-how-its-made {
+  display: inline-block;
 }
-
-.subtitle {
+.subtitle-how-its-made h2 {
   font-family: var(--big-font);
-  font-size: 30px;
+  font-size: var(--h2);
   font-weight: 400;
   color: var(--pink-elipse);
-  line-height: 34.35px;
+  line-height: 20.61px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin: 0;
@@ -71,18 +15,22 @@
 .h1-how-its-made {
   font-family: var(--big-font);
   font-weight: 400;
-  font-size: 58px;
+  font-size: 34px;
   color: var(--red-passion);
   text-align: center;
-  line-height: 66.41px;
-  letter-spacing: 0.06em;
+  line-height: 38.93px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   margin: 0;
 }
 
-.subtitlu-how-its-made {
-  text-align: center;
-  margin-bottom: 16px;
+.subtitle-how-its-made {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  padding-top: 60px;
+  gap: 16px;
 }
 
 .how-its-made {
@@ -91,57 +39,54 @@
 }
 
 .container-img-p {
-  display: flex;
   align-items: center;
   background-image: url(../images/how-it-is-made/milkyway-bg.png.png);
-  background-size: cover;
-
+  background-size: 280px 133px;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: 25px 360px;
 }
 
 .container-img-p img {
-  width: 501px;
-  height: 501px;
+  width: 280px;
+  height: 279px;
   margin-right: 20px;
 }
 
 .container-right {
   flex-grow: 1;
-  margin-bottom: 70px;
-  margin-left: 99px;
-}
-
-.container-right p {
-  margin-bottom: 10px;
+  padding-left: 10px;
+  background-size: 280px 133px;
+  background-repeat: no-repeat;
+  background-position: center top 50px;
 }
 
 .container-how-its-made {
   width: 100%;
-  height: 1229px;
+  height: 1564px;
 }
 
 .p-how-its-made-1 {
   font: var(--common-font);
   font-weight: var(--weight-fnt-medium);
-  font-size: var(--primary-font-size);
+  font-size: 12px;
   color: var(--black);
-  line-height: 28.16px;
-  white-space: pre-line;
-  margin-bottom: 32px;
+  line-height: 19.44px;
   letter-spacing: 0.04em;
   font-weight: bold;
   grid-template-rows: repeat(4, 1fr);
+  white-space: pre-line;
 }
 
 .p-how-its-made-2 {
   font: var(--common-font);
   font-weight: var(--weight-fnt-medium);
-  font-size: var(--secondary-font-size);
-  line-height: 27.16px;
-  white-space: pre-line;
+  font-size: 12px;
+  line-height: 19.44px;
   margin-bottom: 40px;
   letter-spacing: 0.04em;
   grid-template-rows: repeat(4, 1fr);
+  white-space: pre-line;
 }
 
 .btn-read-more {
@@ -181,11 +126,11 @@
 .h3-section3-advantages {
   font-family: var(--big-font);
   font-weight: 400;
-  font-size: 58px;
+  font-size: 36px;
   color: var(--red-passion);
   text-align: center;
-  line-height: 66.41px;
-  letter-spacing: 0.06em;
+  line-height: 41.22px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   margin: 0;
 }
@@ -193,11 +138,10 @@
 .p-section3-advantages {
   font: var(--common-font);
   font-weight: var(--weight-fnt-big);
-  font-size: var(--primary-font-size);
-  line-height: 28.16px;
+  font-size: 12px;
+  line-height: 20.4px;
   letter-spacing: 0.02em;
   color: var(--black);
-  letter-spacing: 0.02em;
   text-align: left;
 }
 
@@ -225,53 +169,69 @@
   height: 1229px;
 }
 
+.advantages-container {
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 20px; /* Gap between grid items */
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 0px;
+  margin-left: 20px;
+}
+
+.icon-production {
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/how-it-is-made/production.png');
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.icon-icecream-apple {
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/how-it-is-made/icecream-apple.png');
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.icon-flavours {
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/how-it-is-made/flavours.png');
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.container-p1-how-its-made {
+  width: 400px;
+  height: 104px;
+}
+
 /* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
+  padding-top: 40px;
   left: 0;
-  top: 0;
+  top: 0px;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
   background-color: var(--pink-bg);
-  margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 50%;
+  width: 60%;
+  height:auto;
   border-radius: 40px;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .modal-read-more {
@@ -279,9 +239,370 @@
   font: var(--common-font);
   font-weight: var(--weight-fnt-big);
   font-size: var(--primary-font-size);
-  line-height: 28.16px;
-  letter-spacing: 0.02em;
   color: var(--black);
-  letter-spacing: 0.02em;
   text-align: left;
+}
+
+/* Stilizare Tableta  768px  */
+@media (min-width: 768px) and (max-width: 1158px) {
+  .body-how-its-made {
+    display: inline-block;
+  }
+  .container-how-its-made {
+    // height: 1092px;
+    width: 1200px;
+  }
+  .advantages-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px;
+    width: 768px;
+  } /* Gap between grid items */
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .container-img-p {
+    display: flex;
+    align-items: center;
+    background-image: none;
+    background-size: cover;
+    width: auto;
+    position: relative;
+  }
+  .how-its-made {
+    background-color: #fff5f6;
+    margin-bottom: 60px;
+  }
+  .container-img-p img {
+    width: 336px;
+    height: 335px;
+    margin-right: 20px;
+    padding-left: 32px;
+    margin-bottom: 265px;
+  }
+  .h3-section3-advantages {
+    font-family: var(--big-font);
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--red-passion);
+    text-align: center;
+    line-height: 54.96px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .p-section3-advantages {
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-big);
+    font-size: 14px;
+    line-height: 24.36px;
+    letter-spacing: 0.02em;
+    color: var(--black);
+    text-align: left;
+  }
+  .icon-production {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/how-it-is-made/production.png');
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  .icon-icecream-apple {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/how-it-is-made/icecream-apple.png');
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  .icon-flavours {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/how-it-is-made/flavours.png');
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: var(--pink-bg);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 40px;
+    margin-left: 100px;
+    min-height: 400px;
+  }
+
+  .modal-read-more {
+    background-color: var(--pink-bg);
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-big);
+    font-size: var(--primary-font-size);
+    color: var(--black);
+    text-align: left;
+  }
+}
+/* Desktop styles */
+@media screen and (min-width: 1159px) {
+  .body-how-its-made {
+    display: inline-block;
+  }
+  .subtitle {
+    font-family: var(--big-font);
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--pink-elipse);
+    line-height: 34.35px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .h1-how-its-made {
+    font-family: var(--big-font);
+    font-weight: 400;
+    font-size: 58px;
+    color: var(--red-passion);
+    text-align: center;
+    line-height: 66.41px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .subtitle-how-its-made {
+    text-align: center;
+    margin-bottom: 16px;
+    padding-top: 60px;
+  }
+
+  .how-its-made {
+    background-color: #fff5f6;
+    margin-bottom: 60px;
+  }
+
+  .container-img-p {
+    display: flex;
+    align-items: center;
+    background-image: url(../images/how-it-is-made/milkyway-bg.png.png);
+    background-size: cover;
+    width: auto;
+    background-position: 0px 0px;
+  }
+
+  .container-img-p img {
+    width: 501px;
+    height: 501px;
+    margin-right: 20px;
+  }
+
+  .container-right {
+    flex-grow: 1;
+    padding-left: 80px;
+  }
+
+  .container-how-its-made {
+    width: 100%;
+    height: 1229px;
+  }
+
+  .p-how-its-made-1 {
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-medium);
+    font-size: var(--primary-font-size);
+    color: var(--black);
+    line-height: 28.16px;
+    letter-spacing: 0.04em;
+    font-weight: bold;
+    grid-template-rows: repeat(4, 1fr);
+    white-space: pre-line;
+  }
+
+  .p-how-its-made-2 {
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-medium);
+    font-size: var(--secondary-font-size);
+    line-height: 27.16px;
+    margin-bottom: 40px;
+    letter-spacing: 0.04em;
+    grid-template-rows: repeat(4, 1fr);
+    white-space: pre-line;
+  }
+
+  .btn-read-more {
+    margin-top: 40px;
+    border: none;
+    color: var(--red-button);
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-big);
+    font-size: var(--primary-font-size);
+    line-height: 20.83px;
+    background-color: var(--white);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+
+  .btn-read-more:hover {
+    cursor: pointer;
+
+    background-color: var(--pink-elipse);
+  }
+
+  /* Section 3 Advantages */
+
+  .hidden-title {
+    font-size: 0;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .h3-section3-advantages {
+    font-family: var(--big-font);
+    font-weight: 400;
+    font-size: 58px;
+    color: var(--red-passion);
+    text-align: center;
+    line-height: 66.41px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .p-section3-advantages {
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-big);
+    font-size: var(--primary-font-size);
+    line-height: 28.16px;
+    letter-spacing: 0.02em;
+    color: var(--black);
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+
+  .advantages-grid {
+    background-color: var(--pink-made);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .advantage {
+    text-align: baseline;
+  }
+
+  .advantage h3 {
+    margin: 10px 0;
+  }
+
+  .advantage p {
+    margin: 0;
+  }
+
+  .section3-advantages {
+    width: 1200px;
+    height: 1229px;
+  }
+
+  .advantages-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px; /* Gap between grid items */
+  }
+
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 20px;
+  }
+
+  .icon-production {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/how-it-is-made/production.png');
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  .icon-icecream-apple {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/how-it-is-made/icecream-apple.png');
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  .icon-flavours {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/how-it-is-made/flavours.png');
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+
+  .container-p1-how-its-made {
+    width: 400px;
+    height: 104px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: var(--pink-bg);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 40px;
+    height: 100px;
+    min-height: 350px;
+    line-height: 28.16px;
+  }
+
+  .modal-read-more {
+    background-color: var(--pink-bg);
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-big);
+    font-size: var(--primary-font-size);
+    color: var(--black);
+    text-align: left;
+  }
 }
