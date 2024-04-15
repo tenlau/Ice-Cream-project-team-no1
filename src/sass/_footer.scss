@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .footer-bg {
     background-color: var(--pink-made);
 }
@@ -6,7 +10,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    // padding-top: 720px;
+    padding-top: 720px;
 }
 
 .top-footer {
@@ -18,18 +22,20 @@
 .medium-footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .left-footer {
-    width: 40%;
+    /*   width: 40%;*/
     padding-left: 20px;
 }
+
 .central-footer {
     width: 26%;
 }
 
 .right-footer {
-    width: 34%;
+    /*width: 34%;*/
 }
 
 .motto1 {
@@ -40,7 +46,7 @@
     letter-spacing: 0.04em;
     text-align: left;
     color: var(--pink-elipse);
-
+    margin: 0;
 }
 
 .motto2 {
@@ -126,4 +132,66 @@
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--black-pink);
+}
+
+/* Mobile styles */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    /* Styles for small mobile devices */
+    .motto1 {
+        font-size: 18px;
+    }
+
+    .motto2 {
+        font-size: 34px;
+    }
+
+    .contact-message {
+        font-size: 12px;
+    }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* Styles for tablets */
+    .medium-footer,
+    .copyright {
+        flex-direction: column;
+    }
+
+    .motto1 {
+        font-size: 26px;
+    }
+
+    .motto2 {
+        font-size: 48px;
+    }
+
+    .contact-message {
+        font-size: 14px;
+    }
+}
+
+
+/* Desktop styles */
+@media only screen and (min-width: 769px) {
+
+    /* Styles for desktop and larger screens */
+    .motto1 {
+        font-size: 30px;
+    }
+
+    .motto2 {
+        font-size: 58px;
+    }
+
+    .contact-message {
+        font-size: 16px;
+    }
+
+    .copyright,
+    .motto {
+        display: flex;
+    }
 }
