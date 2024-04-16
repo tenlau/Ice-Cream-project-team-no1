@@ -135,7 +135,7 @@
 }
 
 /* Mobile styles */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) {
 
     /* Styles for small mobile devices */
     .motto1 {
@@ -152,7 +152,7 @@
 }
 
 /* Tablet styles */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 767px) {
 
     /* Styles for tablets */
     .medium-footer,
@@ -175,7 +175,7 @@
 
 
 /* Desktop styles */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1280px) {
 
     /* Styles for desktop and larger screens */
     .motto1 {
