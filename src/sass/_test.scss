@@ -25,13 +25,11 @@
 .grid-item1 {position: relative; bottom: 100px;}
 .grid-item10 {position: relative; bottom: 90px;}
 .grid-item8,.grid-item9 {position: relative;bottom: 25px; }
+.grid-item7,.grid-item6 {position: relative;top: 12px; }
 
-div.grid-item4 img,
-div.grid-item8 img {
-  border-radius: 20px;
-}
 
 
 .gallery-massonry {
-    display: ruby-text;
+    display: grid;
+    justify-content: center;
 }

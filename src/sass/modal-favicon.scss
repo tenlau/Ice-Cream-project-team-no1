@@ -10,7 +10,7 @@
     background-color: rgba(0,0,0,0.5);
   }
   
-  .modal-content {
+  .modal-contentt {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
@@ -32,8 +32,8 @@
     text-decoration: none;
     cursor: pointer;
   }
-  .modal-content{
-    background: #9c3a87;
+  .modal-contentt{
+    background: var(--pink-bg);
     min-height: 100vh;
     margin: 0 auto;
   }
