@@ -1,12 +1,15 @@
 * {
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .footer-bg {
+    width: 100%;
     background-color: var(--pink-made);
 }
 
 .footer-container {
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -14,28 +17,27 @@
 }
 
 .top-footer {
-    width: 100%;
+    width: 100%; 
     position: absolute;
     top: -12%;
 }
 
 .medium-footer {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+  }
 
 .left-footer {
-    /*   width: 40%;*/
+    margin: 0;
+    border-left: inherit;
     padding-left: 20px;
 }
-
-.central-footer {
-    width: 26%;
-}
-
+    
 .right-footer {
-    /*width: 34%;*/
+    margin: 0;
+    border-right: inherit;
 }
 
 .motto1 {
@@ -57,7 +59,7 @@
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--red-passion);
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 0px;
 }
 
 .social-media {
@@ -72,7 +74,9 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-}
+    margin-top: 20px;
+    margin-right: 0;
+    }
 
 .social-icon {
     width: 20px;
@@ -107,21 +111,25 @@
     letter-spacing: 0.02em;
 }
 
+.footer-contacts {
+    margin-right: 0;
+}
+
 .phone {
     text-decoration: none;
     color: var(--red-passion);
 }
 
 .line {
-    width: 95%;
-    height: 2px;
+    width:95%;
 }
 
 .bottom-footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .copyright {
@@ -132,12 +140,25 @@
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--black-pink);
+    padding: 0px ;
 }
 
 /* Mobile styles */
 @media only screen and (min-width: 320px) {
 
     /* Styles for small mobile devices */
+    .medium-footer, .copyright {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copyright > p:first-child {
+        margin-bottom: 0;
+    }
+    .copyright>p:nth-child(2) {
+        margin-top: 0;
+    }
+
     .motto1 {
         font-size: 18px;
     }
@@ -155,11 +176,26 @@
 @media only screen and (min-width: 767px) {
 
     /* Styles for tablets */
-    .medium-footer,
     .copyright {
-        flex-direction: column;
+        margin: 0 auto;
+        height: 26px;
     }
 
+    .copyright P {
+        margin: auto;
+    }
+
+    .medium-footer,
+    .copyright {
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .moto {
+        display: flex;
+        flex-direction: column;
+    }
     .motto1 {
         font-size: 26px;
     }
@@ -175,7 +211,7 @@
 
 
 /* Desktop styles */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 800px) {
 
     /* Styles for desktop and larger screens */
     .motto1 {
@@ -191,7 +227,12 @@
     }
 
     .copyright,
-    .motto {
+    .motto, .medium-footer {
         display: flex;
     }
+
+    .medium-footer {
+        justify-content: space-between;
+    }
+
 }
